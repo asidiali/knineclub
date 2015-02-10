@@ -11,14 +11,21 @@ To unite dogs and dog owners on a local level, promoting a healthier lifestyle f
 ## Action Timeline
 
 ### February 2015
+
 - Temp site up 
+
 ### March 2015
+
 - Base prototype of check in mechanism 
 - Social media fully active
+
 ### May 2015
+
 - Alpha app complete; begin testing
 - Alpha stage users
 - Minor marketing pushes
+
 ### June 2015
+
 - Major summer marketing pushes
 - Bug fixes and updates
