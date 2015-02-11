@@ -1,8 +1,10 @@
 <template name="parksList">
-
+  <h2>Nearby Parks</h2>
   {{#each parks}}
     <h4>{{name}} {{#if rating}}(Rated: {{rating}}){{/if}}</h4>
     <p>{{vicinity}}</p>
+
+    <hr>
   {{/each}}
 
 </template>
