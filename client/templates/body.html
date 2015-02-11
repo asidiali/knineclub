@@ -1,0 +1,12 @@
+<body>
+
+  <h1>KNINECLUB</h1>
+  {{> loginButtons}}
+  <hr>
+
+  {{#if currentUser}}
+    {{> dogsList}}
+  {{/if}}
+  <hr>
+  {{> parksList}}
+</body>
