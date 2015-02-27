@@ -1,13 +1,14 @@
 <body>
 
-  <h1>KNINECLUB</h1>
-  {{> loginButtons}}
-  <hr>
+{{> nav}}
+
+<div class="container">
 
   {{#if currentUser}}
-    {{> addDog}}
     {{> dogsList}}
   {{/if}}
   <hr>
   {{> parksList}}
+
+</div>
 </body>

@@ -1,11 +1,19 @@
 <template name="dogsList">
 
-  <h2>My Dogs</h2>
+  <div class="dogs-list">
 
-  <ul>
-    {{#each myDogs}}
-      <li>{{name}} - {{age}}</li>
-    {{/each}}
-  </ul>
+    <h2>My Dogs</h2>
+
+    <ul>
+      {{#each myDogs}}
+        <li>{{name}} - {{age}}</li>
+      {{/each}}
+
+        <li class="add-dog-list-item">{{> addDog}}</li>
+    </ul>
+
+
+
+  </div>
 
 </template>
