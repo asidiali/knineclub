@@ -2,11 +2,14 @@
 
   <div class="dogs-list">
 
-    <h2>My Dogs</h2>
+    <h3>My Dogs</h3>
 
     <ul>
       {{#each myDogs}}
-        <li>{{name}} - {{age}}</li>
+        <li>
+          <h2 class="dog-name">{{name}}</h2>
+          <p>{{age}} years old</p>
+        </li>
       {{/each}}
 
         <li class="add-dog-list-item">{{> addDog}}</li>

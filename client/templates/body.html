@@ -6,6 +6,8 @@
 
   {{#if currentUser}}
     {{> dogsList}}
+  {{else}}
+    <p>You aren't signed in.</p>
   {{/if}}
   <hr>
   {{> parksList}}
