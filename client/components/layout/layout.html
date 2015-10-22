@@ -1,0 +1,92 @@
+<template name="MainLayout">
+  {{> Template.dynamic template=nav }}
+  {{> Template.dynamic template=content }}
+  {{>loading}}
+</template>
+
+<template name="home">
+
+  <div class="bgs">
+    <div class="home-1-bg">
+    </div>
+    <div class="home-3-bg">
+    </div>
+  </div>
+
+  <div class="home-1">
+    <span class="paw"><i class="ion-ios-paw"></i></span>
+    <span class="paw"><i class="ion-ios-paw"></i></span>
+    <h1>KnineClub</h1>
+    <h4>Get the essentials for all your adventures, <br class="desktop-only" />delivered straight to your doorstep every month. <br class="desktop-only" />All for just $9.</h4>
+    <a href="/join" class="get-button">Join The Club <i class="ion-ios-arrow-right"></i></a>
+    <a href="#learn-more" class="learn-button">Learn More <i class="ion-ios-arrow-down"></i></a>
+  </div>
+
+  <div class="home-3">
+    <h1>Every month</h1>
+    <div class="head-message">
+      <h2>60 Premium<br><span style="color: #1bb23a;">biodegradable</span><br>poop bags</h2>
+      <h2 class="plus">+</h2>
+      <h2 class="right">Dental Chews<br><span style="color: #1bb23a;">Tennis Balls</span><br>Beef Bones<br><span style="color: #1bb23a;">Event Calendar</span></h2>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="home-1-spacing">
+    </div>
+
+    <div class="home-2">
+      <div class="steps-wrapper">
+        <div class="step step-1">
+          <h3><span class="num">1.</span><br class="desktop-only">Join <span class="lobster">KnineClub</span></h3>
+          <p>
+            Become a member to get delivered an essentials box each month. You'll also get full access to our Slack group, where you can chat with other dog owners in your city.
+          </p>
+        </div>
+        <div class="step step-2">
+          <h3><span class="num">2.</span><br class="desktop-only">Choose Surprises</h3>
+          <p>
+            Choose which kinds of surprises your pup prefers based on activity level. Each box includes a month's supply of poop bags, and a choice between balls or bones.
+          </p>
+        </div>
+        <div class="step step-3">
+          <h3><span class="num">3.</span><br class="desktop-only"> Get hyped</h3>
+          <p>
+            Your essentials will be delivered each month straight to your door! Kick back and enjoy the surprises, or <a href="/slack">find somewhere new for you and your pup to explore nearby.</a>
+          </p>
+        </div>
+      </div>
+      <a class="get-started" href="/join">Get Started <i class="ion-ios-arrow-right"></i></a>
+    </div>
+
+    <div class="home-3-spacing"> </div>
+
+    <div class="home-4">
+      <div class="about-wrapper">
+        <p>
+          <span class="k9c">KnineClub</span> is a community of dogs and dog owners who are always looking for new adventures in their local area. We've launched in Seattle, and we're committed to making it easier for dogs to get the social activity they need to stay healthy and happy.
+        </p>
+        <a href="/join" class="get-button">Join Now <i class="ion-ios-arrow-right"></i></a>
+      </div>
+
+      <div class="notice">
+        <p>
+          Interested in bringing KnineClub to your city?<br class="desktop-only"> Drop by our Slack group and say hi!
+        </p>
+      </div>
+
+    </div>
+
+    {{>footer}}
+
+  </div>
+
+
+</template>
+
+
+<template name="footer">
+  <p class="footer">
+    Copyright &copy; KnineClub 2015.
+  </p>
+</template>

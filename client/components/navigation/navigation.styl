@@ -1,0 +1,38 @@
+.navigation-list-wrapper
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 999999
+
+  &.with-bg
+    background-color transparent
+
+  ul
+    display flex
+    flex-flow row nowrap
+    justify-content flex-start
+    list-style none
+    padding 20px
+    box-sizing border-box
+
+    @media (max-width:600px)
+      padding 10px
+      display none
+
+    li
+      margin auto 5px
+      color #ddd
+      padding 10px
+      font-weight 900
+      text-transform uppercase
+      text-align center
+
+      &.active
+        color #16CDF4
+        border-bottom 2px solid #16CDF4
+        padding-bottom 8px
+
+      &.whats-inside.active
+        color #16CDF4
+        border-bottom 2px solid #16CDF4

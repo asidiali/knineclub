@@ -1,0 +1,391 @@
+.bgs
+  width 100vw
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 9
+
+.home-1-bg
+  height 100vh
+  width 100vw
+  background url('assets/sierra.jpg') no-repeat left top scroll
+  background-size cover
+
+.home-3-bg
+  height 100vh
+  width 100vw
+  background url('assets/dakota.jpg') no-repeat center top scroll
+  background-size cover
+
+  @media (max-width:600px)
+    height 150vh
+
+.home-1
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 99999
+  background-color rgba(0,0,0,0.5)
+  height 100vh
+  min-height 500px
+  width 100vw
+  display flex
+  flex-flow column nowrap
+  justify-content center
+
+  *
+    box-sizing border-box
+    padding 10px 20px
+    margin 0 auto
+    text-align center
+    text-shadow 0 2px 6px rgba(0,0,0,0.5)
+
+
+  .paw
+    font-size 30px
+    line-height 10px
+    color #aaa
+    margin 0 auto
+    padding 0 !important
+    transform rotate(-20deg)
+
+    &:first-of-type
+      transform translate(30px,10px) rotate(10deg)
+
+    i
+      padding 0 !important
+
+
+  h1, h1 span
+    font-family "Lobster"
+    color #fff
+    font-size 60px
+
+    @media (max-width: 600px)
+      font-size 40px
+
+    span
+      padding-left 0
+
+  h4
+    font-weight 400
+    color #eee
+    font-size 30px
+    margin-bottom 20px
+
+    @media (max-width: 600px)
+      font-size 20px
+
+  a
+    font-size 20px
+    margin-bottom 10px
+    padding 20px 40px
+    padding-right 30px
+    color #fff
+    border 2px solid #fff
+    border-radius 40px
+    text-decoration none
+    text-transform uppercase
+    font-weight 900
+
+    @media (max-width: 600px)
+      font-size 16px
+
+    i
+      padding 0
+      margin 0
+      margin-left 10px
+
+    &.get-button
+      background-color #fff
+      color #1bb23a
+      text-shadow none
+
+      i
+        text-shadow none
+
+    &.learn-button
+      font-size 16px
+      padding 10px 20px
+
+      @media (max-with: 600px)
+        font-size 14px
+
+.content-wrapper
+  position absolute
+  top 0
+  left 0
+  right 0
+  width 100vw
+  z-index 999
+
+  .home-1-spacing,
+  .home-3-spacing
+    height 100vh
+    min-height 500px
+    width 100vw
+
+  .home-2,
+  .home-4
+    width 100vw
+    min-height 100vh
+    padding 40px 10px
+    box-sizing border-box
+    display flex
+    flex-flow column nowrap
+    justify-content center
+
+  .home-4
+    background-color #fff
+
+  .home-2
+    background-size auto
+    background-color #fff
+    min-height 100vh
+    border-top 20px solid #16CDF4
+    border-bottom 20px solid #16CDF4
+
+    @media (max-width: 600px)
+      background-position -30% 20%
+
+    .get-started
+      display inline-block
+      margin 0 auto
+      margin-top 40px
+      padding 20px 40px
+      border 2px solid #1bb23a
+      border-radius 50px
+      text-transform uppercase
+      color #1bb23a
+      font-weight 700
+      text-decoration none
+
+      i
+        margin-left 5px
+
+    .steps-wrapper
+      display flex
+      flex-flow row nowrap
+      justify-content center
+
+      @media (max-width: 600px)
+        flex-flow column nowrap
+
+      .step
+        flex 0 0 auto
+        width 33.33%
+        margin 0
+        padding 20px
+        box-sizing border-box
+
+        &:first-of-type
+          h3
+            text-align right
+          p
+            text-align right
+            margin 0
+            margin-left auto
+
+        &:last-of-type
+          h3
+            text-align left
+          p
+            text-align left
+            margin 0
+            margin-right auto
+
+        @media (max-width: 600px)
+          width 100%
+
+        h3
+          color #1bb23a
+          text-align center
+          text-transform capitalize
+          font-weight 700
+          font-size 30px
+
+          span.lobster
+            font-family "Lobster"
+            font-style normal
+
+          span.num
+            font-weight 700
+            font-size 20px
+            color #16CDF4
+
+        p
+          font-weight 300
+          font-size 1.3em
+          line-height 1.5
+          text-align center
+          max-width 80%
+          margin 0 auto
+
+          a
+            color #16CDF4
+            text-decoration none
+
+            &:hover
+              text-decoration underline
+
+.home-3
+  height 100vh
+  position fixed
+  opacity 0
+  top 0
+  left 0
+  right 0
+  z-index 9
+  background-color rgba(0,0,0,0.5)
+  display none
+  width 100vw
+  min-height 500px
+  padding 40px 10px
+  box-sizing border-box
+  flex-flow column nowrap
+  justify-content center
+
+  .head-message
+    display flex
+    flex-flow row nowrap
+    justify-content center
+
+    @media (max-width: 600px)
+      flex-flow column nowrap
+
+    h2
+      color #fff
+      font-size 50px
+      text-transform capitalize
+      padding 10px 20px
+      line-height 50px
+      text-align center
+      box-sizing border-box
+      text-shadow 0 2px 6px rgba(0,0,0,0.25)
+
+      &:first-of-type
+        text-align right
+        @media (max-width:600px)
+          text-align center
+
+      &:last-of-type
+        text-align left
+        font-size 40px
+        line-height 40px
+        margin auto 0
+
+        @media (max-width:600px)
+          text-align center
+          font-size 26px
+          line-height 26px
+
+      &.plus
+        color #16CDF4
+        font-size 80px
+        padding 20px
+        margin auto 0
+        text-shadow 0 2px 6px rgba(0,0,0,0.25)
+
+      @media (max-width:600px)
+        font-size 26px
+        line-height 26px
+
+  h1
+    color #16CDF4
+    text-transform capitalize
+    font-family "Lobster"
+    font-size 40px
+    text-align center
+    margin-bottom 20px
+    text-shadow 0 2px 6px rgba(0,0,0,0.25)
+
+.home-4
+  background-color #fff
+  position relative
+
+  .notice
+    position absolute
+    bottom 20px
+    left 0
+    right 0
+    border 1px solid #16CDF4
+    padding 20px 40px
+    max-width 400px
+    margin 0 auto
+    border-radius 4px
+    margin-top 60px
+
+    @media (max-width:600px)
+      position static
+
+    p
+      font-weight 300
+      font-size 16px
+      color #16CDF4
+      text-align center
+
+  .about-wrapper
+    padding 20px
+    max-width 60%
+    margin 0 auto
+    margin-top 60px
+    text-align center
+
+    @media (max-width:600px)
+      max-width 100%
+
+    p
+      font-size 24px
+      line-height 1.5
+      font-weight 300
+      text-align center
+
+      span.k9c
+        font-family "Lobster"
+        font-size 28px
+        color #1bb23a
+
+    a
+      font-size 20px
+      margin 0 auto
+      display inline-block
+      text-align center
+      margin-top 40px
+      box-sizing border-box
+      padding 20px 40px
+      padding-right 30px
+      color #fff
+      border 2px solid #fff
+      border-radius 40px
+      text-decoration none
+      text-transform uppercase
+      font-weight 900
+      border 2px solid #1bb23a
+
+      @media (max-width: 600px)
+        font-size 16px
+
+      i
+        padding 0
+        margin 0
+        margin-left 10px
+
+      &.get-button
+        background-color #fff
+        color #1bb23a
+        text-shadow none
+
+        i
+          text-shadow none
+
+
+.footer
+  background-color #eee
+  padding 20px
+  margin 0
+  color #ccc
+  text-transform uppercase
+  font-weight 900
+  text-align right
