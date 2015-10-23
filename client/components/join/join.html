@@ -1,7 +1,28 @@
 <template name="join">
 
-  <div class="join">
-    <img src="assets/icon.png" alt="" />
+  <div class="join-wrapper">
+    <div class="join-steps">
+      <ul>
+        <li class="active">1. Create Your Account</li>
+        <li>2. Choose Box Type</li>
+        <li>3. Review And Checkout</li>
+      </ul>
+    </div>
+
+    <h2>Welcome to <span>KnineClub</span></h2>
+    <p>
+      First, let's set up your account. Please fill out the form below and hit next when you're ready.
+    </p>
+
+    <form class="add-member-form">
+      <input type="text" name="name" placeholder="your name">
+      <input type="text" name="email" placeholder="your email">
+      <input type="password" name="password" placeholder="a password">
+      <input type="password" name="repeated_password" placeholder="password again">
+    </form>
+
+    <span class="next-button">Next <i class="ion-ios-arrow-right"></i></span>
+
   </div>
 
 </template>

@@ -2,7 +2,7 @@ $(window).scroll ->
   $(".bgs").css "top": "-"+$(window).scrollTop()/2+"px"
   #$(".home-3-bg").css "top": "-"+$(window).scrollTop()/7+"px"
   $(".home-1").css "opacity": 1-$(window).scrollTop()/400
-  $(".home-3").css "opacity": ($(window).scrollTop()-1200)*0.005
+  $(".home-3").css "opacity": ($(window).scrollTop()-1100)*0.005
 
   if $(window).scrollTop() > 50
     $(".home-1").css "pointer-events": "none"

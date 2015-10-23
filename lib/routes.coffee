@@ -1,7 +1,6 @@
 FlowRouter.route '/',
   name: 'home',
   action: ->
-    Session.set "loading", true
     BlazeLayout.render 'MainLayout',
       content: 'home',
       nav: 'navigationList'
