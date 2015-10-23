@@ -3,25 +3,40 @@
   <div class="join-wrapper">
     <div class="join-steps">
       <ul>
-        <li class="active">1. Create Your Account</li>
-        <li>2. Choose Box Type</li>
-        <li>3. Review And Checkout</li>
+        <li class="{{#if stepOne}}active{{/if}}">1. Create Your Account</li>
+        <li class="{{#if stepTwo}}active{{/if}}">2. Choose Box Type</li>
+        <li class="{{#if stepThree}}active{{/if}}">3. Review &amp; Checkout</li>
       </ul>
     </div>
 
+    {{#if stepOne}}
+
     <h2>Welcome to <span>KnineClub</span></h2>
     <p>
-      First, let's set up your account. Please fill out the form below and hit next when you're ready.
+      Let's set up your account. Fill out the form below and hit next when you're ready.
     </p>
 
     <form class="add-member-form">
-      <input type="text" name="name" placeholder="your name">
-      <input type="text" name="email" placeholder="your email">
-      <input type="password" name="password" placeholder="a password">
-      <input type="password" name="repeated_password" placeholder="password again">
+      <input class="name-input" type="text" name="name" placeholder="your name">
+      <input class="email-input" type="text" name="email" placeholder="your email">
+      <input class="password-input" type="password" name="password" placeholder="a password">
+      <input class="repeat-password-input" type="password" name="repeat_password" placeholder="password again">
     </form>
 
-    <span class="next-button">Next <i class="ion-ios-arrow-right"></i></span>
+    <span class="next-button next-1">Next: <span>Choose Box Type</span> <i class="ion-ios-arrow-right"></i></span>
+
+    {{/if}}
+
+    {{#if stepTwo}}
+
+    <h2>Choose Your Box Type</h2>
+    <p>
+      How active is your dog?
+    </p>
+
+    <span class="next-button next-2">Review &amp; Checkout <i class="ion-ios-arrow-right"></i></span>
+
+    {{/if}}
 
   </div>
 
